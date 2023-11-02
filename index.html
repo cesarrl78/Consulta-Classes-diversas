@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplos de Classes</title>
+</head>
+<body>
+
+<h1>Exemplos de Classes em Diferentes Linguagens</h1>
+
+<h2>Exemplo em C++</h2>
+<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class MinhaClasseCPlusPlus {
+public:
+    void Metodo() {
+        cout &lt;&lt; "Olá do C++!" &lt;&lt; endl;
+    }
+};
+
+int main() {
+    MinhaClasseCPlusPlus objeto;
+    objeto.Metodo();
+    return 0;
+}
+</pre>
+
+<h2>Exemplo em C</h2>
+<pre>
+#include &lt;stdio.h&gt;
+
+struct MinhaClasseC {
+    int atributo;
+};
+
+int main() {
+    struct MinhaClasseC objeto;
+    objeto.atributo = 42;
+    printf("Valor do atributo: %d\n", objeto.atributo);
+    return 0;
+}
+</pre>
+
+<h2>Exemplo em ASP Classic</h2>
+<pre>
+' Exemplo em ASP Classic
+Class MinhaClasseASP
+    Public Sub Metodo()
+        Response.Write "Olá do ASP Classic!"
+    End Sub
+End Class
+
+Dim objetoASP
+Set objetoASP = New MinhaClasseASP
+objetoASP.Metodo()
+</pre>
+
+<h2>Exemplo em PHP</h2>
+<pre>
+<?php
+// Exemplo em PHP
+class MinhaClassePHP {
+    public function Metodo() {
+        echo "Olá do PHP!";
+    }
+}
+
+$objeto = new MinhaClassePHP();
+$objeto->Metodo();
+?>
+</pre>
+
+<h2>Exemplo em Delphi</h2>
+<pre>
+unit MinhaClasseDelphi;
+
+interface
+
+type
+  TMinhaClasseDelphi = class
+  public
+    procedure Metodo;
+  end;
+
+implementation
+
+procedure TMinhaClasseDelphi.Metodo;
+begin
+  WriteLn('Olá do Delphi!');
+end;
+
+end.
+</pre>
+
+<h2>Exemplo em COBOL</h2>
+<pre>
+* Exemplo em COBOL
+IDENTIFICATION DIVISION.
+PROGRAM-ID. MinhaClasseCOBOL.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 Mensagem PIC X(20).
+
+PROCEDURE DIVISION.
+    MOVE "Olá do COBOL!" TO Mensagem
+    DISPLAY Mensagem
+    STOP RUN.
+</pre>
+
+<h2>Exemplo em C#</h2>
+<pre>
+// Exemplo em C#
+using System;
+
+class MinhaClasseCSharp {
+    public void Metodo() {
+        Console.WriteLine("Olá do C#!");
+    }
+
+    static void Main() {
+        MinhaClasseCSharp objeto = new MinhaClasseCSharp();
+        objeto.Metodo();
+    }
+}
+</pre>
+
+</body>
+</html>
